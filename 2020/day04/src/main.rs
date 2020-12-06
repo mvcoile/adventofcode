@@ -14,7 +14,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     let mut passports: Vec<Passport> = Vec::new();
     for &p in v_input.iter() {
         let passport = Passport::parse( &p.to_string() );
-        //passport.println();
+        passport.println();
         passports.push(passport);
     }
 
